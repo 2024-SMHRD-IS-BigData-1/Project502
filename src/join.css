@@ -1,0 +1,114 @@
+.join-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 비율 유지 */
+    position: relative;
+    background-color: #ffffff;
+}
+
+.join-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw; /* 전체 화면의 1/4 크기로 설정 */
+    margin: 0 auto; /* 수평 중앙 배치 */
+}
+
+.join-logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: gray;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.phone-input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.phone-input-group input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.verification-button {
+    width: 100px;
+    margin-left: 10px;
+    padding: 8px;
+    border: none;
+    background-color: #195d3d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.verification-button:hover {
+    background-color: grey;
+}
+
+.join-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #195d3d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    background-color: grey;
+}
+
+.signup-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
