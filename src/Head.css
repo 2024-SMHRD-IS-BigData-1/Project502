@@ -49,10 +49,13 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  margin-top: -10px;
+  margin-right: -5px;
 }
 
 .myRoomContext {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-top: -8px;
 }
 
 .myRoomContext a {

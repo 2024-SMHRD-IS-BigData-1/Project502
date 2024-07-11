@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import './posting.css';
+import './Posting.css';
 import './Head.css';
 import Header from './Head.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';

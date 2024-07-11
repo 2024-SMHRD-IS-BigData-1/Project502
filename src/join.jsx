@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './join.css';
+import './Join.css';
 import logo from './assets/logo.PNG';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer.jsx'; // Footer 추가 

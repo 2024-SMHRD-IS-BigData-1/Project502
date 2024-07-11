@@ -1,0 +1,307 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #ffffff;
+    padding-top: 250px; /* 위쪽 여백을 250px로 설정하여 헤더와 겹치지 않게 조정 */
+    width: 25vw; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pageName {
+    color: gray;
+  }
+  
+  .profile-form {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 25vw; 
+    margin: 0 auto; /* 수평 중앙 배치 */
+  }
+  
+  .profile_picture_container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 40px;
+  }
+  
+  .profile_picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.543);
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 영역을 채우도록 설정 */
+    border-radius: 50%; /* 원형으로 설정 */
+    border-color: gray;
+  }
+  
+  .dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -215px; /* 상단 여백 추가 */
+    margin-left: -415px;
+  }
+  
+  .dot-img {
+    transform: scale(0.25); /* 크기를 1/4로 줄임 */
+  }
+  
+  .nick_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px; /* 상단 여백 추가 */
+    margin-left: -250px;
+  }
+  
+  .nick {
+    color: rgb(57, 57, 57);
+  }
+  
+  .intro_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px; /* 상단 여백 추가 */
+    margin-left: -235px;
+  }
+  
+  .intro_mySelf {
+    color: rgb(57, 57, 57);
+    text-align: center; /* 텍스트 가운데 정렬 */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -300px; /* 상단 여백 추가 */
+    margin-right: -400px;
+  }
+  
+  .button {
+    background-color: rgb(20, 91, 20);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80px; /* 버튼 너비 설정 */
+    height: 40px; /* 버튼 높이 설정 */
+    font-size: 14px;
+  }
+  
+  .plus-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* 상단 여백 추가 */
+    margin-right: -450px;
+  }
+  
+  .plus-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .plus_img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text {
+    margin-left: 10px;
+    margin-top: 100px;
+  }
+  
+  .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box {
+    aspect-ratio: 16 / 9;
+   
+    width: 25%; /* 전체 화면의 1/4 너비로 설정 */
+    height: 250px; /* 고정 높이 설정 */
+    margin-top: 200px;
+    margin-right: 0; /* 중앙 정렬을 위해 수정 */
+    flex-direction: row;
+  }
+  
+  .box-photoContainer {
+    border: 1px solid rgba(0, 0, 0, 0.205);
+  }
+  
+  .box-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 부모 요소의 너비에 맞춤 */
+    height: 198px; /* 자동 높이 조정 */
+   
+  }
+  
+  .nick-container {
+    display: flex;
+    background-color: rgba(0, 7, 13, 0.1);
+  }
+  
+  .profile-img {
+    border: 1px solid rgb(143, 136, 136);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px; /* 원형 유지 */
+    margin-top: 6px;
+    margin-left: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-img img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top:10px;
+  }
+  
+  .nick {
+    margin-left: 11px;
+    margin-top: 10px;
+  }
+  
+  .popup {
+    aspect-ratio: 16 / 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 1%;
+    text-align: center;
+    position: relative;
+    width: 500px; /* 전체 화면의 1/4 너비로 설정 */
+    height: 300px;
+  }
+  
+  .arrow_container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .left_arrow {
+    display: flex;
+    margin-top: -110px;
+    margin-right: 300px;
+    width: 40px;
+    height: 30px;
+  }
+  
+  .right_arrow {
+    display: flex;
+    margin-top: -120px;
+    margin-left: 280px;
+    width: 40px;
+    height: 30px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .popUp_imgBox {
+    border: rgba(0, 0, 0, 0.033);
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 500px; /* 부모 요소의 너비에 맞춤 */
+    height: 200px; /* 자동 높이 조정 */
+    background-color: rgba(128, 128, 128, 0.251);
+  }
+  
+  .popUp_imgBox_img {
+    border: 1px solid rgba(0, 0, 0, 0.196);
+    margin-top: -1px;
+    margin-left: 120px;
+    width: 250px; /* 부모 요소의 너비에 맞춤 */
+    height: 200px; /* 자동 높이 조정 */
+    background-color: white;
+  }
+  
+  .popUp_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popUp_nick {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 500px; /* 부모 요소의 너비에 맞춤 */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .poppUp_text {
+    border: 1px solid rgba(0, 0, 0, 0.241);
+    margin-left: -20px;
+    margin-top: 0px;
+    width: 500px; /* 부모 요소의 너비에 맞춤 */
+    height: 125px;
+    text-align: center;
+  }
+  
+  /* 미디어 쿼리: 모바일 뷰포트 설정 */
+  @media (max-width: 768px) {
+    .popup-content, .popUp_imgBox, .popUp_nick, .poppUp_text {
+      width: 90%;
+      height: auto;
+    }
+  
+    .box {
+      width: 90%;
+      height: auto;
+      margin-right: 0;
+    }
+  
+    .box-photo {
+      height: auto;
+    }
+  }

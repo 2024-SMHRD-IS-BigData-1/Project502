@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './modify_profile.css';
+import './Modify_profile.css';
 import './Head.css'
 import Header from './Head.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';

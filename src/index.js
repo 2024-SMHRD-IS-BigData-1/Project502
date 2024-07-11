@@ -4,13 +4,15 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// import App from './login';
-// import App from './join';
+// import App from './Login';
+// import App from './Join';
 // import App from './Head';
-// import App from './modify_profile';
- import App from './posting';
+// import App from './Modify_profile';
+// import App from './Posting';
 // import App from './Footer';
 // import App from './Profile';
+ import App from './Anabada';
+// import Abb from './Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
