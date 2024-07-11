@@ -8,10 +8,17 @@ import reportWebVitals from './reportWebVitals';
 // import App from './Join';
 // import App from './Head';
 // import App from './Modify_profile';
+<<<<<<< HEAD
  import App from './Posting';
 // import App from './Footer';
 // import App from './Profile';
 // import App from './Anabada';
+=======
+import App from './Posting';
+// import App from './Footer';
+// import App from './Profile';
+//  import App from './Anabada';
+>>>>>>> c18e850ff8848386322d0e49b04bd3ef9994802d
 // import Abb from './Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
