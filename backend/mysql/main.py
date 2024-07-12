@@ -5,9 +5,19 @@ from datetime import datetime
 import models
 from database import engine, SessionLocal
 from sqlalchemy.orm import Session
+from passlib.context import CryptContext
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=engine)
+
+# Password hashing configuration
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+def get_password_hash(password: str) -> str:
+    return pwd_context.hash(password)
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    return pwd_context.verify(plain_password, hashed_password)
 
 class ChatBase(BaseModel):
     room_idx : int
@@ -34,6 +44,9 @@ class UserBase(BaseModel):
     id : str
     pw : str
     nick : str
+
+class UserCreate(UserBase):
+    pw : str
 
 def get_db():
     db = SessionLocal()
@@ -72,7 +85,8 @@ async def create_post(post: PostBase, db: db_dependency):
 
 @app.post("/users/", status_code=status.HTTP_201_CREATED)
 async def create_user(user: UserBase, db: db_dependency):
-    db_user = models.User(**user.dict())
+    hashed_password = get_password_hash(user.pw)
+    db_user = models.User(id=user.id, pw=hashed_password, nick=user.nick)
     db.add(db_user)
     db.commit()
 

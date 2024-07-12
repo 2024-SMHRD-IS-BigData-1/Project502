@@ -2,6 +2,7 @@ from fastapi import FastAPI, WebSocket, Request, WebSocketDisconnect, Depends, H
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 from dataclasses import dataclass
 from typing import Dict
 import uuid
@@ -12,16 +13,32 @@ from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 from mysql import models
 from mysql.database import engine, SessionLocal, Base
+from passlib.context import CryptContext
 
 # 데이터베이스 초기화
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+# CORS 설정
+origins = [
+    "http://localhost",
+    "http://localhost:3000",  # React 애플리케이션의 주소
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],  # 필요한 메서드 추가
+    allow_headers=["*"],  # 필요한 헤더 추가
+)
+
 # Chatting 폴더의 설정
 app.mount("/static", StaticFiles(directory="Chatting/static"), name="static")
 templates = Jinja2Templates(directory="Chatting/templates")
 
+# 웹소켓 관련 코드
 @dataclass
 class ConnectionManager:
     def __init__(self) -> None:
@@ -77,6 +94,15 @@ async def websocket_endpoint(websocket: WebSocket):
 def get_room(request: Request):
     return templates.TemplateResponse("room.html", {"request": request})
 
+# 비밀번호 해싱
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+def get_password_hash(password: str) -> str:
+    return pwd_context.hash(password)
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    return pwd_context.verify(plain_password, hashed_password)
+
 # MySQL 폴더의 설정
 class ChatBase(BaseModel):
     room_idx: int
@@ -104,6 +130,9 @@ class UserBase(BaseModel):
     pw: str
     nick: str
 
+class UserCreate(UserBase):
+    pw: str
+
 def get_db():
     db = SessionLocal()
     try:
@@ -116,6 +145,10 @@ async def create_chat(chat: ChatBase, db: Session = Depends(get_db)):
     db_chat = models.Chat(**chat.dict(), chatted_at=datetime.utcnow())
     db.add(db_chat)
     db.commit()
+
+@app.post('/chat')
+def chat_endpoint():
+    return {'message': 'Chat request received'}
 
 @app.post("/rooms/", status_code=status.HTTP_201_CREATED)
 async def create_room(room: RoomBase, db: Session = Depends(get_db)):
@@ -137,7 +170,8 @@ async def create_post(post: PostBase, db: Session = Depends(get_db)):
 
 @app.post("/users/", status_code=status.HTTP_201_CREATED)
 async def create_user(user: UserBase, db: Session = Depends(get_db)):
-    db_user = models.User(**user.dict())
+    hashed_password = get_password_hash(user.pw)
+    db_user = models.User(id=user.id, pw=hashed_password, nick=user.nick)
     db.add(db_user)
     db.commit()
 

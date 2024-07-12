@@ -6,7 +6,7 @@ class User(Base):
     __tablename__ = 'users'
 
     id = Column(String(50), primary_key=True, index=True)
-    pw = Column(String(50), nullable=False)
+    pw = Column(String(1500), nullable=False)
     nick = Column(String(50), nullable=False, unique=True)
 
 class Post(Base):
