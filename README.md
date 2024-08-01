@@ -81,44 +81,44 @@
 ## ⚙ 시스템 아키텍처(구조) 예시 
 
 ## 📌 SW유스케이스
-![image](![image](https://github.com/user-attachments/assets/b9c7a639-f984-4f80-a14a-64f1b8c6e904)
+![image](https://github.com/user-attachments/assets/b9c7a639-f984-4f80-a14a-64f1b8c6e904)
 
 
 ## 📌 서비스 흐름도
-![image](![image](https://github.com/user-attachments/assets/38c92d44-0480-4d4f-8a96-b05ec17c6192)
+![image](https://github.com/user-attachments/assets/38c92d44-0480-4d4f-8a96-b05ec17c6192)
 
 
 ## 🖥 화면 구성
 
 ### 메인페이지
-(![image](https://github.com/user-attachments/assets/311a46e0-af2d-4897-86ec-94af873470fc)
+![image](https://github.com/user-attachments/assets/311a46e0-af2d-4897-86ec-94af873470fc)
 
 ### 로그인
-(![image](https://github.com/user-attachments/assets/06fdb2e7-76c9-4d68-9c04-329f31731769)
+![image](https://github.com/user-attachments/assets/06fdb2e7-76c9-4d68-9c04-329f31731769)
 
 ### 회원가입
-(![image](https://github.com/user-attachments/assets/39d986e0-0d03-4d82-a5f9-f743f4331b91)
+![image](https://github.com/user-attachments/assets/39d986e0-0d03-4d82-a5f9-f743f4331b91)
 
 ### Swit
-(![image](https://github.com/user-attachments/assets/16c0be0b-2ce2-4d45-bc02-3a710d49c183)
+![image](https://github.com/user-attachments/assets/16c0be0b-2ce2-4d45-bc02-3a710d49c183)
 
 ### Anabada
-(![image](https://github.com/user-attachments/assets/afcb4beb-5a31-4f06-b5aa-d15fb58cb978)
+![image](https://github.com/user-attachments/assets/afcb4beb-5a31-4f06-b5aa-d15fb58cb978)
 
 ### 게시글 상세보기
-(![image](https://github.com/user-attachments/assets/c52e8b43-f03a-4402-baaa-53e5fb621694)
+![image](https://github.com/user-attachments/assets/c52e8b43-f03a-4402-baaa-53e5fb621694)
 
 ### 글 작성
-(![image](https://github.com/user-attachments/assets/5970df22-face-424d-9fd0-a8345fd16917)
+![image](https://github.com/user-attachments/assets/5970df22-face-424d-9fd0-a8345fd16917)
 
 ### Profile
-(![image](https://github.com/user-attachments/assets/ed1df73c-1836-43dc-a63f-aebdbd24212a)
+![image](https://github.com/user-attachments/assets/ed1df73c-1836-43dc-a63f-aebdbd24212a)
 
 ### Profile 수정
-(![image](https://github.com/user-attachments/assets/8bb5b0f3-8478-463c-bf32-2d25c0f7d8a2)
+![image](https://github.com/user-attachments/assets/8bb5b0f3-8478-463c-bf32-2d25c0f7d8a2)
 
 ### 채팅
-(![image](![image](https://github.com/user-attachments/assets/210ef03a-e043-4753-a87b-4e478630f397)
+![image](![image](https://github.com/user-attachments/assets/210ef03a-e043-4753-a87b-4e478630f397)
 
 ## 👨‍👩‍👦‍👦 팀원 역할
 <table>
