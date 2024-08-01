@@ -37,37 +37,37 @@
     <tr>
         <td>사용언어</td>
         <td>
-            <tr>PYTHON, HTML, CSS</tr>
+           PYTHON, HTML, CSS
         </td>
     </tr>
     <tr>
         <td>라이브러리</td>
         <td>
-            <tr>cool sms, JSON, SQLAlchemy, GEOLOCATION, WEBSOCKET</tr>
+          cool sms, JSON, SQLAlchemy, GEOLOCATION, WEBSOCKET
         </td>
     </tr>
     <tr>
         <td>개발도구</td>
         <td>
-            <tr>Gemini-Pro, VSCODE</tr>
+           Gemini-Pro, VSCODE
         </td>
     </tr>
     <tr>
         <td>서버환경</td>
         <td>
-            <tr>Uvicorn</tr>
+            Uvicorn
         </td>
     </tr>
     <tr>
         <td>데이터베이스</td>
         <td>
-            <tr>MySQL</tr>
+           MySQL
         </td>
     </tr>
     <tr>
         <td>협업도구</td>
         <td>
-          <tr>GITHUB</tr>
+          GITHUB
     </tr>
 </table>
 
