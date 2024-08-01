@@ -141,7 +141,6 @@
     <td align="center"><a href="https://github.com/kzy282" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/mj4226" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/summerscape" target='_blank'>github</a></td>
-  
   </tr>
 </table>
 
@@ -154,4 +153,8 @@
 * 문제2<br>
   - github 활용 문제: github에 가끔씩 Front-end 코드가 업로드 되지 않는 문제 상황이 발생함<br>
   - 해결 방안: 문제 상황 발생 시 팀원 간 직접 코드를 공유하는 방식으로 해결함
+ 
+* 문제3<br>
+  - 새로운 프레임 워크 적응 문제: 이번 프로젝트에서 FastAPI와 SQLAlchemy를 처음 사용해보는 상황이었기 때문에 적응에 어려움이 있었음<br>
+  - 해결 방안: 공식 문서를 참고하여 공부하면서 적응하였음
 
