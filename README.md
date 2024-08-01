@@ -37,44 +37,37 @@
     <tr>
         <td>사용언어</td>
         <td>
-            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-            <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/></a>
+            <tr>PYTHON, HTML, CSS</tr>
         </td>
     </tr>
     <tr>
         <td>라이브러리</td>
         <td>
-            <a href="https://www.google.com/"><img src="https://img.shields.io/badge/Google-4285F4?style=for-the-badge&logo=google&logoColor=white"/></a>
-            <a href="https://www.coolsms.co.kr/"><img src="https://img.shields.io/badge/CoolSMS-00C4B4?style=for-the-badge&logo=coolsms&logoColor=white"/></a>
+            <tr>cool sms, JSON, SQLAlchemy, GEOLOCATION, WEBSOCKET</tr>
         </td>
     </tr>
     <tr>
         <td>개발도구</td>
         <td>
-            <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white"/>
-            <a href="https://jupyter.org/"><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/></a>
-            <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+            <tr>Gemini-Pro, VSCODE</tr>
         </td>
     </tr>
     <tr>
         <td>서버환경</td>
         <td>
-            <img src="https://img.shields.io/badge/Apache%20Tomcat-D22128?style=for-the-badge&logo=Apache%20Tomcat&logoColor=white"/>
+            <tr>Uvicorn</tr>
         </td>
     </tr>
     <tr>
         <td>데이터베이스</td>
         <td>
-            <img src="https://img.shields.io/badge/Oracle%2011g-F80000?style=for-the-badge&logo=Oracle&logoColor=white"/>
+            <tr>MySQL</tr>
         </td>
     </tr>
     <tr>
         <td>협업도구</td>
         <td>
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
-        </td>
+          <tr>GITHUB</tr>
     </tr>
 </table>
 
