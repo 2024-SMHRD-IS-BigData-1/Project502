@@ -1,8 +1,10 @@
-from fastapi import FastAPI, HTTPException, Depends, status
+from fastapi import FastAPI, HTTPException, Depends, status, UploadFile
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from typing import Annotated
 from datetime import datetime
 import models
+import os, shutil
 from database import engine, SessionLocal
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
@@ -96,3 +98,22 @@ async def read_user(user_id: str, db: db_dependency):
     if user is None:
         raise HTTPException(status_code=404, detail='User not found')
     return user
+
+# File upload and download configuration
+target_dir = './test/'
+os.makedirs(target_dir, exist_ok=True)
+
+@app.post("/uploadFiles")
+async def upload_files(files: list[UploadFile]):
+    for file in files:
+        filename = os.path.join(target_dir, file.filename)
+        with open(filename, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+    return {"filenames": [file.filename for file in files]}
+
+@app.get("/testfile/{filename}")
+async def get_file(filename: str):
+    file_path = os.path.join(target_dir, filename)
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="File not found")
+    return FileResponse(file_path)
