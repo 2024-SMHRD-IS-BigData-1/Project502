@@ -91,34 +91,34 @@
 ## 🖥 화면 구성
 
 ### 메인페이지
-![Main](![image](https://github.com/user-attachments/assets/311a46e0-af2d-4897-86ec-94af873470fc)
+(![image](https://github.com/user-attachments/assets/311a46e0-af2d-4897-86ec-94af873470fc)
 
 ### 로그인
-![로그인]![image](https://github.com/user-attachments/assets/06fdb2e7-76c9-4d68-9c04-329f31731769)
+(![image](https://github.com/user-attachments/assets/06fdb2e7-76c9-4d68-9c04-329f31731769)
 
 ### 회원가입
-![회원가입](![image](https://github.com/user-attachments/assets/39d986e0-0d03-4d82-a5f9-f743f4331b91)
+(![image](https://github.com/user-attachments/assets/39d986e0-0d03-4d82-a5f9-f743f4331b91)
 
 ### Swit
-![Swit](![image](https://github.com/user-attachments/assets/16c0be0b-2ce2-4d45-bc02-3a710d49c183)
+(![image](https://github.com/user-attachments/assets/16c0be0b-2ce2-4d45-bc02-3a710d49c183)
 
 ### Anabada
-![Anabada](![image](https://github.com/user-attachments/assets/afcb4beb-5a31-4f06-b5aa-d15fb58cb978)
+(![image](https://github.com/user-attachments/assets/afcb4beb-5a31-4f06-b5aa-d15fb58cb978)
 
 ### 게시글 상세보기
-![게시글 상세보기](![image](https://github.com/user-attachments/assets/c52e8b43-f03a-4402-baaa-53e5fb621694)
+(![image](https://github.com/user-attachments/assets/c52e8b43-f03a-4402-baaa-53e5fb621694)
 
 ### 글 작성
-![글 작성](![image](https://github.com/user-attachments/assets/5970df22-face-424d-9fd0-a8345fd16917)
+(![image](https://github.com/user-attachments/assets/5970df22-face-424d-9fd0-a8345fd16917)
 
 ### Profile
-![Profile](![image](https://github.com/user-attachments/assets/ed1df73c-1836-43dc-a63f-aebdbd24212a)
+(![image](https://github.com/user-attachments/assets/ed1df73c-1836-43dc-a63f-aebdbd24212a)
 
 ### Profile 수정
-![Profile 수정](![image](https://github.com/user-attachments/assets/8bb5b0f3-8478-463c-bf32-2d25c0f7d8a2)
+(![image](https://github.com/user-attachments/assets/8bb5b0f3-8478-463c-bf32-2d25c0f7d8a2)
 
 ### 채팅
-![채팅](![image](![image](https://github.com/user-attachments/assets/210ef03a-e043-4753-a87b-4e478630f397)
+(![image](![image](https://github.com/user-attachments/assets/210ef03a-e043-4753-a87b-4e478630f397)
 
 ## 👨‍👩‍👦‍👦 팀원 역할
 <table>
@@ -146,8 +146,8 @@
   <tr>
     <td align="center"><a href="https://github.com/Kayadadu" target='_blank'>github</a></td>
     <td align="center"><a href="https://github.com/kzy282" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/" target='_blank'>github</a></td>
-    <td align="center"><a href="https://github.com/" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/mj4226" target='_blank'>github</a></td>
+    <td align="center"><a href="https://github.com/summerscape" target='_blank'>github</a></td>
   
   </tr>
 </table>
